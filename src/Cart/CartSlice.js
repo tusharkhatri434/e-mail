@@ -13,12 +13,6 @@ const CartSlice = createSlice({
           state.items=[action.payload]
         },
         readItems:(state,action)=>{
-            let data = action.payload;
-            state.read.map((v)=>{
-                if(v.id === data.id){
-                    //  
-                }
-            })
             state.read.push(action.payload);
         },
         unreadItems:(state,action)=>{
